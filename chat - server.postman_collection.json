@@ -1,0 +1,522 @@
+{
+	"info": {
+		"_postman_id": "0cce7f71-4831-4177-b533-633736273349",
+		"name": "chat - server",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Actualizar",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7Il9pZCI6IjVkNjU0YWI5M2ZkMzQ5NjFmYzg1NmM5YyIsIm5vbWJyZSI6IllPVFpJTiBDb250cmVyYXMiLCJhdmF0YXIiOiJhdi0xLnBuZyIsImVtYWlsIjoieW90emluQGdtYWlsLmNvbSIsImNvcnBvcmFjaW9uIjoiZXN0YXRhbCIsImdydXBvcyI6WyI1ZDY0MDI0MWQxMDk5NzY0NzQ3NjQxNTAiLCI1ZDY0MDI1ZWQxMDk5NzY0NzQ3NjQxNTEiXX0sImlhdCI6MTU2OTUyMTg5NSwiZXhwIjoxNjAxMDU3ODk1fQ.IqyI0wrI42HZyYPq7ESkQAthovPX6mSvS6xe-Qf3R1o",
+						"type": "text"
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "onesignal",
+							"value": "11111111111111111111111111111",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:2000/updateone",
+					"host": [
+						"localhost"
+					],
+					"port": "2000",
+					"path": [
+						"updateone"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "yot@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:2000/login",
+					"host": [
+						"localhost"
+					],
+					"port": "2000",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Mensajes",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "grupo",
+							"value": "5d640241d109976474764150",
+							"type": "text"
+						},
+						{
+							"key": "texto",
+							"value": "ujk",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:2000/mensajes",
+					"host": [
+						"localhost"
+					],
+					"port": "2000",
+					"path": [
+						"mensajes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BuscarUsuarios",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "grupos",
+							"value": "5d640241d109976474764150",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "yot@gmail.com",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:2000/buscarUsuarios",
+					"host": [
+						"localhost"
+					],
+					"port": "2000",
+					"path": [
+						"buscarUsuarios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear usuario",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7Il9pZCI6IjVkNjQwMmVlZDEwOTk3NjQ3NDc2NDE1MiIsIm5vbWJyZSI6IkFsZXhuYWRlciBDb250cmVyYXMiLCJhdmF0YXIiOiJhdi0xLnBuZyIsImVtYWlsIjoieW90QGdtYWlsLmNvbSIsImNvcnBvcmFjaW9uIjoiZXN0YXRhbCIsImdydXBvcyI6WyI1ZDY0MDI0MWQxMDk5NzY0NzQ3NjQxNTAiLCI1ZDY0MDI1ZWQxMDk5NzY0NzQ3NjQxNTEiXX0sImlhdCI6MTU3MDc0MDIyMCwiZXhwIjoxNjAyMjc2MjIwfQ.ZvLPBYPhqI0KYxLmek6-g8mHAex9b0e0Re3f-MUHPWk",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombre",
+							"value": "alex",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "alex@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text"
+						},
+						{
+							"key": "grupos",
+							"value": "5d640241d109976474764150",
+							"type": "text"
+						},
+						{
+							"key": "corporacion",
+							"value": "estatal",
+							"type": "text"
+						},
+						{
+							"key": "uType",
+							"value": "00",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:2000/create/usuario",
+					"host": [
+						"localhost"
+					],
+					"port": "2000",
+					"path": [
+						"create",
+						"usuario"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "imagen-upload",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7Il9pZCI6IjVkNjQwMmVlZDEwOTk3NjQ3NDc2NDE1MiIsIm5vbWJyZSI6IkFsZXhuYWRlciBDb250cmVyYXMiLCJhdmF0YXIiOiJhdi0xLnBuZyIsImVtYWlsIjoieW90QGdtYWlsLmNvbSIsImNvcnBvcmFjaW9uIjoiZXN0YXRhbCIsImdydXBvcyI6WyI1ZGI3NjBkNWI3MGJjMDM2Njg0ODRlNDIiLCI1ZGI3NjBlOGI3MGJjMDM2Njg0ODRlNDMiLCI1ZGI5Y2RmM2I0YjJmODFhMzBhNmJhZDAiXSwidVR5cGUiOiIwMSJ9LCJpYXQiOjE1NzI0NzIwNzcsImV4cCI6MTYwNDAwODA3N30._XutbwhtrMr1DRrtDBXfjoWz_t9iY22q0LGYTMCQRTk",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/Usuario_final/Downloads/TELMEX.pdf"
+						},
+						{
+							"key": "x-token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7Il9pZCI6IjVkNjQwMmVlZDEwOTk3NjQ3NDc2NDE1MiIsIm5vbWJyZSI6IkFsZXhuYWRlciBDb250cmVyYXMiLCJhdmF0YXIiOiJhdi0xLnBuZyIsImVtYWlsIjoieW90QGdtYWlsLmNvbSIsImNvcnBvcmFjaW9uIjoiZXN0YXRhbCIsImdydXBvcyI6WyI1ZDY0MDI0MWQxMDk5NzY0NzQ3NjQxNTAiLCI1ZDY0MDI1ZWQxMDk5NzY0NzQ3NjQxNTEiXX0sImlhdCI6MTU3MjAxOTI2NiwiZXhwIjoxNjAzNTU1MjY2fQ.t46fqj3EKYQzKPEmliuoorcma95RfEhbUB21ZazRJmo",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:2000/mensajes/upload/file",
+					"host": [
+						"localhost"
+					],
+					"port": "2000",
+					"path": [
+						"mensajes",
+						"upload",
+						"file"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Traer Mensajes",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "grupo",
+							"value": "5db760d5b70bc03668484e42",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:2000/mensajes",
+					"host": [
+						"localhost"
+					],
+					"port": "2000",
+					"path": [
+						"mensajes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear Grupo",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7Il9pZCI6IjVkNjQwMmVlZDEwOTk3NjQ3NDc2NDE1MiIsIm5vbWJyZSI6IkFsZXhuYWRlciBDb250cmVyYXMiLCJhdmF0YXIiOiJhdi0xLnBuZyIsImVtYWlsIjoieW90QGdtYWlsLmNvbSIsImNvcnBvcmFjaW9uIjoiZXN0YXRhbCIsImdydXBvcyI6WyI1ZDY0MDI0MWQxMDk5NzY0NzQ3NjQxNTAiLCI1ZDY0MDI1ZWQxMDk5NzY0NzQ3NjQxNTEiXX0sImlhdCI6MTU3MjAxOTI2NiwiZXhwIjoxNjAzNTU1MjY2fQ.t46fqj3EKYQzKPEmliuoorcma95RfEhbUB21ZazRJmo",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "grupo",
+							"value": "Cordinadores",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:2000/create/grupo",
+					"host": [
+						"localhost"
+					],
+					"port": "2000",
+					"path": [
+						"create",
+						"grupo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener Mensaje Especifico",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					},
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7Il9pZCI6IjVkNjQwMmVlZDEwOTk3NjQ3NDc2NDE1MiIsIm5vbWJyZSI6IkFsZXhuYWRlciBDb250cmVyYXMiLCJhdmF0YXIiOiJhdi0xLnBuZyIsImVtYWlsIjoieW90QGdtYWlsLmNvbSIsImNvcnBvcmFjaW9uIjoiZXN0YXRhbCIsImdydXBvcyI6WyI1ZGI3NjBkNWI3MGJjMDM2Njg0ODRlNDIiLCI1ZGI3NjBlOGI3MGJjMDM2Njg0ODRlNDMiXX0sImlhdCI6MTU3MjQ1MDkyOSwiZXhwIjoxNjAzOTg2OTI5fQ.IXFCFCqC6L51H2Lr6XX_-oY2hpKVXja0vP6mRvuf7nk",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "",
+							"value": "5db9b19571bcc51e642c44b7",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:2000/obtener/mensaje/5db9b19571bcc51e642c44b7",
+					"host": [
+						"localhost"
+					],
+					"port": "2000",
+					"path": [
+						"obtener",
+						"mensaje",
+						"5db9b19571bcc51e642c44b7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CrearUsuarioPRUEBAS",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7Il9pZCI6IjVkNjQwMmVlZDEwOTk3NjQ3NDc2NDE1MiIsIm5vbWJyZSI6ImFkbWluaXN0cmFkb3IiLCJhdmF0YXIiOiJhdi0xLnBuZyIsImVtYWlsIjoiYWRtaW5AYWRtaW4uY29tIiwiY29ycG9yYWNpb24iOiJlc3RhdGFsIiwiZ3J1cG9zIjpbXSwidVR5cGUiOiIwMCJ9LCJpYXQiOjE1NzI1NTY3NzUsImV4cCI6MTYwNDA5Mjc3NX0.SgRRpeh80pW4V3QPoEMXxDVyFm_clwzgCBznJTXqEhc",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombre",
+							"value": "Alexander Contreras",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "yot@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text"
+						},
+						{
+							"key": "grupos",
+							"value": "5dbb4bbd54f16d31c3b8d63a",
+							"type": "text"
+						},
+						{
+							"key": "corporacion",
+							"value": "Policía estatal",
+							"type": "text"
+						},
+						{
+							"key": "uType",
+							"value": "01",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "10.11.118.67:8080/create/usuario",
+					"host": [
+						"10",
+						"11",
+						"118",
+						"67"
+					],
+					"port": "8080",
+					"path": [
+						"create",
+						"usuario"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LoginPRUEBAS",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "yot@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "10.11.118.67:8080/login",
+					"host": [
+						"10",
+						"11",
+						"118",
+						"67"
+					],
+					"port": "8080",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
